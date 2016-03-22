@@ -1,0 +1,48 @@
+php-pear (1:1.10.1+submodules+notgz-6) unstable; urgency=medium
+
+  * Add mv_conffile to move existing /etc/pear.conf to /etc/pear/pear.conf
+
+ -- Ondřej Surý <ondrej@debian.org>  Tue, 22 Mar 2016 09:48:02 +0100
+
+php-pear (1:1.10.1+submodules+notgz-5) unstable; urgency=medium
+
+  * Replace /usr/share/doc/php-pear symlink by a dir (Closes: #817814)
+  * Set PHP_PEAR_SYSCONF_DIR to /etc/pear (Closes: #818271)
+  * Fix "PECL extensions FTBFS with PHP Fatal error:
+    Call to a member function getFilelist() on null" (Closes: #805222)
+  * Standards-Version: 3.9.7
+  * Updated Vcs-* fields to use https
+  * Add lintian override for pear-package-without-pkg-php-tools-builddep
+
+ -- Mathieu Parent <sathieu@debian.org>  Sat, 19 Mar 2016 22:43:58 +0100
+
+php-pear (1:1.10.1+submodules+notgz-4) unstable; urgency=medium
+
+  * pecl command needs to run without -n to pickup default PHP cli
+    configuration, so XML module gets loaded
+  * php-pear needs to pull XML extension as packaged in php-xml both into
+    Depends and Build-Depends
+
+ -- Ondřej Surý <ondrej@debian.org>  Thu, 03 Mar 2016 11:17:21 +0100
+
+php-pear (1:1.10.1+submodules+notgz-3) unstable; urgency=medium
+
+  * Depend on generic php-cli instead of php5-cli
+  * Fix debian/php-pear.substvars-static to not depend on php5-*
+  * Move included modules from Depends to Provides
+
+ -- Ondřej Surý <ondrej@debian.org>  Mon, 07 Dec 2015 16:00:56 +0100
+
+php-pear (1:1.10.1+submodules+notgz-2) experimental; urgency=medium
+
+  * Don't depend on included libs: Structures_Graph, Console_Getopt, XML_Util
+
+ -- Mathieu Parent <sathieu@debian.org>  Tue, 08 Dec 2015 23:17:52 +0100
+
+php-pear (1:1.10.1+submodules+notgz-1) experimental; urgency=low
+
+  * Initial release. (Closes: #801919)
+  * Using epoch, as package was previously in src:php5 (Closes: #714848)
+  * Install manpages (Closes: #414878)
+
+ -- Mathieu Parent <sathieu@debian.org>  Fri, 27 Nov 2015 23:30:21 +0100

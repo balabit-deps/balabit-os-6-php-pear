@@ -1,0 +1,25 @@
+Source: php-pear
+Section: php
+Priority: optional
+Maintainer: Debian PHP PEAR Maintainers <pkg-php-pear@lists.alioth.debian.org>
+Uploaders: Mathieu Parent <sathieu@debian.org>
+Build-Depends: debhelper (>= 9),
+               php-cli,
+	       php-xml
+Standards-Version: 3.9.7
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-php/pkg-php-tools.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-php/pkg-php-tools.git
+Homepage: http://pear.php.net/package/PEAR
+
+Package: php-pear
+Architecture: all
+Depends: ${misc:Depends},
+         ${phppear:Debian-Depends},
+	 php-xml
+Recommends: ${phppear:Debian-Recommends}
+Provides: php-console-getopt,
+          php-structures-graph,
+          php-xml-util
+Breaks: ${phppear:Debian-Breaks}
+Description: ${phppear:summary}
+ ${phppear:description}
