@@ -1,0 +1,12 @@
+[submodule "submodules/Archive_Tar"]
+	path = submodules/Archive_Tar
+	url = https://github.com/pear/Archive_Tar
+[submodule "submodules/Console_Getopt"]
+	path = submodules/Console_Getopt
+	url = https://github.com/pear/Console_Getopt
+[submodule "submodules/Structures_Graph"]
+	path = submodules/Structures_Graph
+	url = https://github.com/pear/Structures_Graph
+[submodule "submodules/XML_Util"]
+	path = submodules/XML_Util
+	url = https://github.com/pear/XML_Util
