@@ -1,3 +1,12 @@
+php-pear (1:1.10.1+submodules+notgz-6ubuntu0.1) xenial-security; urgency=medium
+
+  * SECURITY UPDATE: unserialization vulnerability in Archive_Tar
+    - debian/patches/CVE-2018-1000888.patch: don't allow filenames to start
+      with phar:// in submodules/Archive_Tar/Archive/Tar.php.
+    - CVE-2018-1000888
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Fri, 11 Jan 2019 13:24:22 -0500
+
 php-pear (1:1.10.1+submodules+notgz-6) unstable; urgency=medium
 
   * Add mv_conffile to move existing /etc/pear.conf to /etc/pear/pear.conf

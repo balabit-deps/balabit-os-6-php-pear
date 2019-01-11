@@ -1,7 +1,8 @@
 Source: php-pear
 Section: php
 Priority: optional
-Maintainer: Debian PHP PEAR Maintainers <pkg-php-pear@lists.alioth.debian.org>
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+XSBC-Original-Maintainer: Debian PHP PEAR Maintainers <pkg-php-pear@lists.alioth.debian.org>
 Uploaders: Mathieu Parent <sathieu@debian.org>
 Build-Depends: debhelper (>= 9),
                php-cli,
