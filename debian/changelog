@@ -1,3 +1,13 @@
+php-pear (1:1.10.1+submodules+notgz-6ubuntu0.2) xenial-security; urgency=medium
+
+  * SECURITY UPDATE: unserialization attack in Archive_Tar
+    - debian/patches/CVE-2020-2894x.patch: catch additional malicious or
+      crafted filenames in submodules/Archive_Tar/Archive/Tar.php.
+    - CVE-2020-28948
+    - CVE-2020-28949
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Mon, 30 Nov 2020 10:03:12 -0500
+
 php-pear (1:1.10.1+submodules+notgz-6ubuntu0.1) xenial-security; urgency=medium
 
   * SECURITY UPDATE: unserialization vulnerability in Archive_Tar

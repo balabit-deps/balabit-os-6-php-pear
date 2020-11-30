@@ -1,3 +1,4 @@
 0001-pecl-command-needs-to-run-without-n-to-pickup-defaul.patch
 0002-Fix-PECL-extensions-FTBFS-with-PHP-Fatal-error-Call-.patch
 CVE-2018-1000888.patch
+CVE-2020-2894x.patch
